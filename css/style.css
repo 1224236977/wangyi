@@ -1,0 +1,184 @@
+*{margin: 0;padding: 0}
+a{text-decoration: none}
+ul{list-style: none}
+img{width: 100%}
+body{font-size: 0.12rem;}
+.padB_50{
+    padding-bottom: 0.5rem;
+}
+.center{position: absolute;left: 0;top: 0;bottom: 0;right: 0;}
+/*公用的*/
+#global{
+    position: fixed;bottom: 0;left: 0;font-size: 0.16rem;width: 100%;text-align: center;z-index: 1;display: none;
+}
+/*欢迎页面*/
+.helloBG{
+    width: 100vw;height: 100vh;background: url("../images/IMG_4144.PNG") no-repeat;background-size: cover;
+}
+/*头部*/
+.header{
+    position: fixed;top: 0;left: 0;width: 100%;z-index: 2;
+}
+.header h2{display: flex;align-items: center;justify-content: space-between}
+
+.header img{width: 0.18rem;}
+/*tab*/
+#tabcontainer{
+    padding-top: 1.03rem;
+}
+.header h2{
+    font-size: 0.24rem;height: 0.56rem;background-color: #ce3d3e;padding: 0 0.24rem;line-height: 0.56rem;color: #fff;
+}
+.header .logo{width: 1.42rem;}
+/*导航*/
+.nav{
+    font-size: 0.14rem;display: flex;background-color: #fff
+}
+.nav li{
+    width: 25%;text-align: center;height: 0.46rem;border-bottom: 2px solid #fff;color: #666;line-height: 0.46rem;
+    cursor: pointer;
+}
+.nav .active{
+    border-bottom: 2px solid #ce3d3e;color: #ce3d3e;
+}
+/*轮播图*/
+.banner {width: 100%;height: 1.48rem;}
+.banner .swiper-pagination-bullet{background-color: #fff}
+/*推荐歌单*/
+.recommendSongs{height: 0.41rem;display: flex;justify-content: space-between;align-items: center}
+.recommend img{width: 0.18rem;margin: 0 0.06rem;vertical-align: -4px}
+.recommend{font-size: 0.16rem;}
+/*更多*/
+.more{font-size: 0.12rem;margin-right: 0.06rem;}
+
+/*歌单列表*/
+.home .songsList{padding: 0 0.03rem;}
+.songsList{display: flex;flex-wrap: wrap;justify-content: space-around;}
+/*歌单*/
+.songItem{height: 1.44rem;position: relative;width: 1rem;}
+/*歌单封面*/
+.itemPic{width: 1rem;height: 1rem;display: flex}
+/*点击人数*/
+.people{height: 0.25rem;text-align: right;color: #fff;font-size: 0.12rem;background-color: rgba(0,0,0,.5);
+    position: absolute;line-height: 0.25rem;width: 1rem}
+.people span{margin-right: 0.06rem;}
+/*歌单描述*/
+.songDes{font-size: 0.12rem;line-height: 1.3;margin-top: 0.05rem;overflow : hidden;text-overflow: ellipsis;
+    display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;color: #272727}
+/*歌单*/
+.songsListWrap{height: 1.8rem;padding-bottom: 0.2rem;position: relative;overflow: hidden}
+/*背景图*/
+.blbg{background-size: cover;background-position: center;width: 100%;height: 100%;filter: blur(20px);transform: scale(1.5);
+z-index: -1;background-image: url("../images/player-bar.png")}
+.lay{background-color: rgba(0,0,0,0.25);z-index: -1}
+/*回退*/
+.songs_top{height: 0.56rem;line-height: 0.56rem;margin-bottom: 0.04rem;display: flex;cursor: pointer}
+.songs_top img{width: 0.16rem;margin:0 0.24rem;align-self: center}
+.songs_top span{color: #fff;font-size: 0.18rem}
+/*歌单内容部分*/
+.songs_bottom{height: 1.2rem;display: flex}
+/*歌单封面*/
+.songB_left{padding: 0 0.1rem;}
+.songB_left .people,.songB_left .itemPic{width: 1.2rem;}
+.songB_left .itemPic{height: 1.2rem;}
+/*歌单详情*/
+.songB_right{flex-grow: 1;padding-left: 0.1rem;display: flex;flex-direction: column;justify-content: space-around;color: #fff;}
+/*歌单描述*/
+.song_des{height: 0.36rem;font-size: 0.14rem;width: 1.4rem;}
+/*歌单作者*/
+.song_artist{display: flex;height: 0.3rem;line-height: 0.3rem}
+/*作者头像*/
+.artist_pic{display: block;width: 0.3rem;}
+.artist_pic img{border-radius: 50%}
+/*作者姓名*/
+.artist_name{margin-left: 0.04rem;}
+/*播放全部*/
+.playAll{margin-left: 0.08rem;height: 0.36rem;border-bottom: 1px solid #f9e8f4;;line-height: 0.36rem;font-size: 0.14rem;
+display: flex}
+.playAll img{width: 0.2rem;align-self: center;margin: 0 0.1rem 0 0.14rem ;}
+/*歌单里的每首歌*/
+#musicList li{display: flex;margin-top: 0.2rem;position: relative}
+/*每首歌的排序*/
+#musicList .music_num{width: 0.36rem;align-self: center;font-size: 0.14rem;color: #999;text-align: center}
+/*每首歌的排序的ac*/
+#musicList .music_numAc{color: #05a9f4}
+/*每首歌的歌名*/
+.music_avatarAc{color:#ce3c3c}
+.music_right{display: flex;flex-direction: column;width: 60%;justify-content: space-around}
+/*设置单行溢出省略*/
+.music_right div{overflow: hidden;text-overflow:ellipsis;white-space: nowrap;}
+/*点击收藏*/
+#musicList li span{width: 0.4rem;height: 0.4rem;display: block;background-size: cover;align-self: center}
+#musicList li span.no{background-image:url("../images/tel_avatar_15.jpg")}
+#musicList li span.yes{background-image:url("../images/tel_avatar_13.jpg")}
+/*音乐播放器*/
+.controller{display: flex;justify-content: space-between;background-color: rgba(255,255,255,.9);height: 0.44rem;position: relative}
+/*播放器左边*/
+.controllerLeft{width: 1.26rem;display: flex}
+/*歌曲封面*/
+.containerAvatar{width: 0.44rem;display: flex;justify-content: center;align-items: center}
+.containerAvatar img{width: 0.36rem;}
+/*进度条*/
+.pmgressbar{position: absolute;left: 0;bottom: 0;width: 10px;height: 2px;background-color: #ce3d3e}
+/*歌曲信息*/
+.containeral{width: 0.82rem;display: flex;flex-direction: column;text-align: left;justify-content: center}
+.music_avatar{font-size: 0.14rem}
+/*歌名*/
+.music_name{font-size: 0.14rem;overflow: hidden;text-overflow:ellipsis;white-space: nowrap;}
+.music_Name{font-size: 0.12rem;}
+/*作者*/
+.music_al{font-size: 0.12rem;color: #a5a5a5;overflow: hidden;text-overflow:ellipsis;white-space: nowrap;}
+/*控制台*/
+.controllerRight{display: flex}
+.controllerRight div{width: 0.42rem;}
+/*播放暂停*/
+.pause{background: url("../images/playbar_btn_pause.png") no-repeat ;background-size: cover }
+.play{background: url("../images/playbar_btn_play.png") no-repeat;background-size: cover;}
+
+/*歌单*/
+/*精品歌单*/
+.magT_1{margin-top: 0.01rem}
+.BoutiquePlaylist{height: 1.24rem;position: relative;overflow: hidden}
+.BoutiquePlaylist .blbg{background-image: url("../images/songlist_03.jpg")}
+.BoutiquePlaylist .itemPic{width: 0.78rem;height: 0.78rem;}
+.BoutiquePlaylist .songB_right{height: 0.78rem;display: block}
+.BoutiquePlaylist .song_des{height: 0.26rem;display: flex;align-items: center;margin-top: 0.02rem;}
+.BoutiquePlaylist .song_des span{margin: 0 0.05rem;}
+.BoutiquePlaylist .songB_right{padding-left: 0}
+.crown{width: 0.18rem;}
+.Rarrow{width: 0.07rem}
+.BoutiquePlaylist .songs_bottom{padding-top: 0.3rem}
+.BoutiquePlaylist .song_artist{display:flex;flex-direction: column;height: 0.52rem;line-height: normal;}
+.BoutiquePlaylist .song_artist span:nth-child(1){margin: 0.05rem 0;}
+.BoutiquePlaylist .song_artist span:nth-child(2){color: #a29b98}
+/*全部歌单*/
+.AllPlaylists{height: 0.54rem;display: flex;justify-content: space-between;font-size: 0.12rem;align-items: center}
+.All{height: 0.22rem;border: 1px solid #d9dada;border-radius: 0.12rem;width: 0.82rem;text-align: center;line-height: 0.22rem;
+margin-left: 0.08rem}
+.All img{height: 0.1rem;width: 0.06rem;margin-left: 0.06rem;}
+.songsType {color: #646566;padding-right: 0.08rem;}
+.songline{color: #e2e3e4}
+.songlist .songsList{justify-content: space-between}
+.songlist .songsList .songItem{width: 1.58rem;height: 2.02rem}
+.songlist .songsList .songItem div{width: 100%;}
+.songlist .songsList .songItem .itemPic{height: 1.58rem}
+.songlist .songsList .songItem p{width: 1.4rem;margin-left: 0.06rem}
+
+/*排行榜*/
+/*榜单名*/
+.title{height: 0.36rem;margin-top: 0.04rem;display: flex;flex-direction: column;justify-content: center}
+.titleName{border-left: 0.02rem solid #d33a31;padding-left: 0.06rem;color: #323233;font-size: 0.14rem;}
+/*榜单列表*/
+.announcement{display: flex;margin-bottom: 0.02rem;}
+.announcementPic{width: 1.06rem;height: 1.06rem;}
+.announcementSongName{flex-grow: 1;align-self: center;padding-left: 0.08rem}
+.announcementSongName li{height: 0.26rem;line-height: 0.26rem;color: #767677;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;width: 1.9rem;}
+
+.classify{display: flex;height: 0.45rem;border-bottom: 1px solid #e2e3e4;align-items: center}
+.classify img{width: 0.2rem;margin-right: 0.1rem;}
+.classify div{display: flex;justify-content: center;align-items: center}
+.classifyL{width: 1.6rem;border-right: 1px solid #e2e3e4;height: 0.32rem;}
+.classifyR{height: 0.32rem;flex-grow: 1}
+.anchorRadio .songsList {justify-content: space-between}
+.anchorRadio .songsList .songItem{width: 1.06rem;}
+.anchorRadio .songsList .itemPic{width: 1.06rem;}

@@ -1,0 +1,2 @@
+var server = "http://musicapi.duapp.com/api.php";
+ url: server+"?type=topPlayList&cat=%E5%85%A8%E9%83%A8&offset=0&limit="+limit,
